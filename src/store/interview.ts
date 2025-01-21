@@ -135,7 +135,7 @@ export const useInterviewStore = create<InterviewStore>((set, get) => ({
         URL.revokeObjectURL(get().recordedVideo);
       }
       
-      // Stop all tracks in the media stream to ensure the camera is released
+      // Stop all tracks in the media stream
       mediaStream.getTracks().forEach(track => track.stop());
       
       set({ 
