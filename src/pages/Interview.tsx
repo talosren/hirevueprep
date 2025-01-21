@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { Camera, Pause, Play, RotateCcw, ArrowRight, Save } from 'lucide-react';
+import { Camera, Pause, Play, ArrowRight } from 'lucide-react';
+import { TbReload } from 'react-icons/tb';
+import { HiDownload } from 'react-icons/hi';
 import { useInterviewStore } from '../store/interview';
 import { Timer } from '../components/Timer';
 
@@ -30,8 +32,12 @@ function Interview() {
   }, [fetchCompanies]);
 
   useEffect(() => {
-    if (videoRef.current && mediaStream && !recordedVideo) {
-      videoRef.current.srcObject = mediaStream;
+    if (videoRef.current) {
+      if (mediaStream && !recordedVideo) {
+        videoRef.current.srcObject = mediaStream;
+      } else if (recordedVideo) {
+        videoRef.current.srcObject = null;
+      }
     }
   }, [mediaStream, recordedVideo]);
 
@@ -41,7 +47,7 @@ function Interview() {
         URL.revokeObjectURL(recordedVideo);
       }
     };
-  }, []);
+  }, [recordedVideo]);
 
   const handleDownload = () => {
     if (recordedVideo) {
@@ -59,7 +65,7 @@ function Interview() {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-2xl font-bold mb-8">Interview Practice</h1>
-      
+
       <div className="grid grid-cols-2 gap-6">
         {/* Left Column */}
         <div className="space-y-6">
@@ -86,7 +92,9 @@ function Interview() {
               <div className="text-sm text-gray-400 mb-2">
                 Question {currentQuestionIndex + 1} of {questions.length}
               </div>
-              <div className="text-lg mb-4">{currentQuestion.question_text}</div>
+              <div className="text-lg mb-4">
+                {currentQuestion.question_text}
+              </div>
             </div>
           )}
         </div>
@@ -153,25 +161,26 @@ function Interview() {
           {/* Bottom Controls */}
           <div className="grid grid-cols-2 gap-4">
             <div>
-              {hasPermission && !isRecording && (
-                recordedVideo ? (
-                  <div className="grid grid-cols-2 gap-2">
+              {hasPermission &&
+                !isRecording &&
+                (recordedVideo ? (
+                  <div className="flex gap-1">
                     <button
                       onClick={() => {
                         set({ recordedVideo: null });
                         requestPermission();
                       }}
-                      className="flex items-center justify-center px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                      className="flex items-center justify-center px-4 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
                     >
-                      <RotateCcw className="w-4 h-4 mr-2" />
-                      Redo
+                      <TbReload className="w-5 h-5 mr-2" />
+                      <span className="text-sm">Redo</span>
                     </button>
                     <button
                       onClick={handleDownload}
-                      className="flex items-center justify-center px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                      className="flex items-center justify-center px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                     >
-                      <Save className="w-4 h-4 mr-2" />
-                      Save
+                      <HiDownload className="w-5 h-5 mr-2" />
+                      <span className="text-sm">Save</span>
                     </button>
                   </div>
                 ) : (
@@ -179,17 +188,16 @@ function Interview() {
                     onClick={startRecording}
                     className="w-full flex items-center justify-center px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                   >
-                    <Play className="w-4 h-4 mr-2" />
+                    <Play className="w-5 h-5 mr-2" />
                     Start Recording
                   </button>
-                )
-              )}
+                ))}
               {isRecording && (
                 <button
                   onClick={stopRecording}
                   className="w-full flex items-center justify-center px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
                 >
-                  <Pause className="w-4 h-4 mr-2" />
+                  <Pause className="w-5 h-5 mr-2" />
                   Stop Recording
                 </button>
               )}
@@ -204,7 +212,7 @@ function Interview() {
                 className="w-full flex items-center justify-center px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
               >
                 Next Question
-                <ArrowRight className="w-4 h-4 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2" />
               </button>
             )}
           </div>
