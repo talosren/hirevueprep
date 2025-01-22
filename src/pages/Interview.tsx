@@ -65,7 +65,8 @@ function Interview() {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-2xl font-bold mb-8">
-  <a href="https://example.com/paul" className="text-blue-500 ">Hirevue Practice by Paul</a>
+  <a>Hirevue Practice by </a>
+  <a href="https://www.linkedin.com/in/paul-lazarte/" className="text-blue-500 ">Paul</a>
 </h1>
 
       <div className="grid grid-cols-2 gap-6">
