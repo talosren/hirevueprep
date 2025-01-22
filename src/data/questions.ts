@@ -15,42 +15,42 @@ interface Question {
 
 export const companies: Company[] = [
   {
-    "id": "2",
+    "id": "1",
     "name": "Market-based Questions",
     "logo_url": "https://example.com/market-based questions-logo.png"
   },
   {
-    "id": "3",
+    "id": "2",
     "name": "Team-related Questions",
     "logo_url": "https://example.com/team-related questions-logo.png"
   },
   {
-    "id": "4",
+    "id": "3",
     "name": "News/Market-related Questions",
     "logo_url": "https://example.com/news/market-related questions-logo.png"
   },
   {
-    "id": "5",
+    "id": "4",
     "name": "Why Firm-related Questions",
     "logo_url": "https://example.com/why firm-related questions-logo.png"
   },
   {
-    "id": "6",
+    "id": "5",
     "name": "Integrity-related Questions",
     "logo_url": "https://example.com/integrity-related questions-logo.png"
   },
   {
-    "id": "7",
+    "id": "6",
     "name": "Adversity-related Questions",
     "logo_url": "https://example.com/adversity-related questions-logo.png"
   },
   {
-    "id": "8",
+    "id": "7",
     "name": "Decision-related Questions",
     "logo_url": "https://example.com/decision-related questions-logo.png"
   },
   {
-    "id": "1",
+    "id": "8",
     "name": "ETC",
     "logo_url": "https://example.com/etc-logo.png"
   },
@@ -148,12 +148,17 @@ export const companies: Company[] = [
     "id": "27",
     "name": "Hamilton Lane",
     "logo_url": "https://example.com/hamilton lane-logo.png"
+  },
+  {
+    "id": "28",
+    "name": "PNC",
+    "logo_url": "https://example.com/pnc-logo.png"
   }
 ];
 
 export const questions: Question[] = [
   {
-    "id": "9",
+    "id": "1",
     "company_id": "0",
     "question_text": "How do you handle working under pressure?",
     "time_limit": 180,
@@ -161,434 +166,434 @@ export const questions: Question[] = [
   },
   {
     "id": "2",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "What recent trends have been observed in equity markets?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "3",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Can you name some of the main equity indices and provide their closing values from yesterday?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "4",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Describe a few notable recent mergers and acquisitions.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "5",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "How would you assess the current state of the IPO market and what do you anticipate for its future trajectory?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "6",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Explain the progression of the \"credit crunch\" - how did it originate and evolve over time?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "7",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Compare current interest rates to those of the previous year and provide reasons for any changes",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "8",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Is the current economic situation a global issue? Which economies have been most significantly affected?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
-    "id": "",
-    "company_id": "2",
+    "id": "9",
+    "company_id": "1",
     "question_text": "Define deflation discuss some of its causes and explain its impacts",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "10",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Analyze the recent trends in oil and commodity prices over the past year.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "11",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Identify the major currencies and highlight the significant currency themes observed in recent months.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "12",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Discuss the impact of the economy on companies and equities.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "13",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Assess the prospects of the equity markets going forward and speculate on future developments.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "14",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Given the circumstances which sectors would you consider investing in presently or once the \"crisis\" subsides?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "15",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Explore the origin and meaning of the term \"credit crunch\" in financial contexts.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "16",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Provide definitions for the following terms: Bonds Futures Cable CDS CDO rates hiking hawkish bullish dovish bearish.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "17",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "How has the perception of risk-taking evolved in the past few months/years?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "18",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "What are the reasons behind central banks' decisions to cut interest rates? In your opinion should they consider further rate cuts?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "19",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "What is your outlook on inflation?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "20",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "What measures are the governments of the US EUR and UK implementing to address the current market crisis?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "21",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "If you had £100 to invest where would you allocate it?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "22",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "What are your predictions for the direction of the commodities rates and equities markets in 2012? What factors influence your outlook?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "23",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Provide updates on the current positions of UST (US Treasury Bonds) Cable",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "24",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "(GBP/USD exchange rate) Euro and Dollars (USD).",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "25",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "Why are you interested in pursuing a career in an industry unrelated to your academic studies?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "26",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "What specific research have you conducted to familiarize yourself with the role you are applying for?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "27",
-    "company_id": "2",
+    "company_id": "1",
     "question_text": "How do interest rates impact property demand?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "28",
-    "company_id": "3",
+    "company_id": "2",
     "question_text": "Tell us about an occasion when you influenced others to think beyond the obvious or to be more creative. What was your role? What were your ideas? How did you communicate them? What was the reaction?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "29",
-    "company_id": "3",
+    "company_id": "2",
     "question_text": "Tell us about a time when your views have differed materially from those of one or more fellow team members. How did you handle the situation? What was the outcome?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "30",
-    "company_id": "3",
+    "company_id": "2",
     "question_text": "Tell me about a time you were able to successfully deal with another person even when that individual may not have personally liked you (or vice versa).",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "31",
-    "company_id": "3",
+    "company_id": "2",
     "question_text": "Tell me about a time when you delegated a project effectively.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "32",
-    "company_id": "3",
+    "company_id": "2",
     "question_text": "Can you describe a situation where you had to handle and submit multiple pieces of work simultaneously? Were they individual tasks or group projects? If they were individual tasks what challenges did you face in meeting all the deadlines? If they were group projects how did you collaborate with others to ensure timely completion? What did you learn from this experience?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "33",
-    "company_id": "3",
+    "company_id": "2",
     "question_text": "Tell me about a time when you motivated others.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "34",
-    "company_id": "4",
+    "company_id": "3",
     "question_text": "How do you stay updated on current events in the business world? What do you consider to be the major ongoing issues in the business world whether on a local (UK/Europe) or global scale? Is there a specific recent event that you find significant in the business world and what makes it significant to you?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "35",
-    "company_id": "4",
+    "company_id": "3",
     "question_text": "In the past six months how have the financial markets particularly in the UK performed? How does this compare to other major developed and developing economies? If there are differences what factors do you believe explain these disparities?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "36",
-    "company_id": "4",
+    "company_id": "3",
     "question_text": "Considering the current economic climate how have investment banks been impacted? How have they responded to these challenges? What opportunities do you see for investment banks to develop and grow their businesses in the short and medium term?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "37",
-    "company_id": "4",
+    "company_id": "3",
     "question_text": "Can you provide an example of a company that has faced significant struggles during the economic downturn? Why do you think they have encountered such difficulties and what steps could they take to improve their position?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "38",
-    "company_id": "4",
+    "company_id": "3",
     "question_text": "Tell us about a company that has experienced rapid growth in recent years either during or excluding the downturn. What factors do you believe contributed to their success? How well have they performed financially? What potential opportunities do you see for further business growth? For companies that grew before the downturn how have they managed in the last 12 – 18 months? For companies that grew during the downturn what do you anticipate their prospects to be like in the next 12 – 18 months?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "39",
-    "company_id": "5",
+    "company_id": "4",
     "question_text": "Why do you think the company (X) where you gained work experience has been successful? How do they differentiate themselves from their competitors? Based on your first-hand experience what areas do you believe they could improve upon in their business?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "40",
-    "company_id": "5",
+    "company_id": "4",
     "question_text": "What attracted you to apply for this role? How extensively have you researched the role and industry? Are there any specific concerns or considerations you have? Are you considering other options as well?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "41",
-    "company_id": "5",
+    "company_id": "4",
     "question_text": "In your view what tasks and responsibilities will you handle during your internship and within the first two years of this role?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "42",
-    "company_id": "6",
+    "company_id": "5",
     "question_text": "Give me an example of a time when you set a goal and were able to meet or achieve it.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "43",
-    "company_id": "6",
+    "company_id": "5",
     "question_text": "Give me a specific example of a time when you had to conform to a policy with which you did not agree.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "44",
-    "company_id": "6",
+    "company_id": "5",
     "question_text": "Tell me about a time when you had to go above and beyond the call of duty in order to get a job done.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "45",
-    "company_id": "6",
+    "company_id": "5",
     "question_text": "Tell me about a time when you used your fact-finding skills to solve a problem.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "46",
-    "company_id": "6",
+    "company_id": "5",
     "question_text": "Tell me about a time when you were forced to make an unpopular decision.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "47",
-    "company_id": "6",
+    "company_id": "5",
     "question_text": "Tell us about a time when you produced work that clearly exceeded expectations. How did you achieve this?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "48",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Tell me about a time when you missed an obvious solution to a problem.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "49",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Tell me about a time when you had to deal with a very upset customer or co-worker.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "50",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Tell me about a time when you had too many things to do and you were required to prioritize your tasks.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "51",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Give me an example of when you had to approach a task in a new rather than established way? What necessitated the change of approach? What were the benefits of the change? Would you have done anything differently in hindsight?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "52",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Tell me about a time when your workload and involvement in other activities left you with insufficient time to complete everything. How did you handle the situation? How did you prioritize and organize your tasks?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "53",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Tell us about a time when your work responsibilities encroached on your personal time. How did you resolve this conflict? How did it make you feel?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "54",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Give me an example of a time when you had to make a split-second decision.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "55",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Describe a time when your workload forced you to miss a deadline. What could you have done differently in hindsight to avoid missing it?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "56",
-    "company_id": "7",
+    "company_id": "6",
     "question_text": "Tell me about a time when you were faced with a stressful situation that demonstrated your coping skills.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "57",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Give me a specific example of a time when you used good judgment and logic in solving a problem.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "58",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Can you recall a time when you had to make a decision without having all the desired information? What was the decision and what doubts did you have?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "59",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Describe a time when you anticipated potential problems and developed preventive measures.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "60",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Describe a situation where you had to rapidly learn difficult concepts? What was the outcome and what did you learn from the experience?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "61",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Give me an example of when you showed initiative and took the lead.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "62",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Describe a time when you were required to make a compelling presentation.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "63",
-    "company_id": "8",
+    "company_id": "7",
     "question_text": "Can you describe a situation where you had to make a decision quickly under pressure? How did you evaluate the success of your decision afterward?",
     "time_limit": 180,
     "max_retries": 3
@@ -1169,133 +1174,133 @@ export const questions: Question[] = [
   },
   {
     "id": "146",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell me about a time that you had to cultivate a relationship online",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "147",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Why are you a good fit for this position/company",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "148",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell me about a time you’ve faced adversity and how you handled it",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "149",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "when asked about overcoming obstacles interviewers are looking for things relating to professional activities (how to deal with a group member not pulling their weight how to deal with a rude customer how to make a decision with imperfect information how to manage multiple competing priorities). This interview question is not just to learn how you overcome adversity but also shows how you are able to determine what is appropriate to discuss in a professional setting and what is not.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "150",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "What major recent event should clients be worried about and how does that affect their portfolios",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "151",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell us about a time you took initiative to go above ad beyond what was originally expected on a project?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "152",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Discuss a recent headline in the financial that caught your attention and why",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "153",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Describe a situation in which you learned something significant from a mistake you made at work or in a school project",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "154",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "In what areas of the market are you most interested to work in and why",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "155",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell us about at time when you recognized that there was a gap in your skills or knowledge. Describe the situation your actions and the outcome of the situation.",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "156",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell us about a time when you were managing several competing priorities while working on a team project. Describe the situation the actions you took and the outcome",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "157",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "How do you handle a difficult client?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "158",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell me about a time when you had to analyze information from multiple sources in order to make a decision",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "159",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Discuss an industry that you follow and describe why it interests you",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "160",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Why this position",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "161",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "How would you do the valuation of a car washing business?",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "162",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell me something unique about you",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "163",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "Tell me about a moment you had to take leadership of a group and the effects it had",
     "time_limit": 180,
     "max_retries": 3
   },
   {
     "id": "164",
-    "company_id": "1",
+    "company_id": "8",
     "question_text": "To which company would you lend money and why?",
     "time_limit": 180,
     "max_retries": 3
@@ -2158,6 +2163,41 @@ export const questions: Question[] = [
     "id": "287",
     "company_id": "27",
     "question_text": "​​​​Describe a time when you had to manage a heavy workload with multiple priorities. How did you ensure everything was completed on time? How did you ensure the quality of your work was maintained?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "288",
+    "company_id": "28",
+    "question_text": "Hello To get started tell us a little about yourself",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "289",
+    "company_id": "28",
+    "question_text": "At PNC we are a customer focused organization. Our customers both internal and external are at the center of everything we do.  In your opinion what are the components of a great customer experience?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "290",
+    "company_id": "28",
+    "question_text": "The Asset Management group Internship/Development Program offers two tracks. Which track are you most interested in: Institutional or Private Bank (Wealth Management)?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "291",
+    "company_id": "28",
+    "question_text": "What financial news source do you find value in? What is a recent story you found interesting?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "292",
+    "company_id": "28",
+    "question_text": "How do banks make money?",
     "time_limit": 180,
     "max_retries": 3
   }
