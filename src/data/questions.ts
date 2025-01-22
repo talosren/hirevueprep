@@ -15,11 +15,6 @@ interface Question {
 
 export const companies: Company[] = [
   {
-    "id": "1",
-    "name": "ETC",
-    "logo_url": "https://example.com/etc-logo.png"
-  },
-  {
     "id": "2",
     "name": "Market-based Questions",
     "logo_url": "https://example.com/market-based questions-logo.png"
@@ -31,7 +26,7 @@ export const companies: Company[] = [
   },
   {
     "id": "4",
-    "name": "News/Market-Related Questions",
+    "name": "News/Market-related Questions",
     "logo_url": "https://example.com/news/market-related questions-logo.png"
   },
   {
@@ -46,13 +41,18 @@ export const companies: Company[] = [
   },
   {
     "id": "7",
-    "name": "Adversity-Related Questions",
+    "name": "Adversity-related Questions",
     "logo_url": "https://example.com/adversity-related questions-logo.png"
   },
   {
     "id": "8",
-    "name": "Decision-Related Questions",
+    "name": "Decision-related Questions",
     "logo_url": "https://example.com/decision-related questions-logo.png"
+  },
+  {
+    "id": "1",
+    "name": "ETC",
+    "logo_url": "https://example.com/etc-logo.png"
   },
   {
     "id": "9",
