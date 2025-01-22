@@ -64,7 +64,9 @@ function Interview() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-8">Interview Practice</h1>
+      <h1 className="text-2xl font-bold mb-8">
+  <a href="https://example.com/paul" className="text-blue-500 ">Hirevue Practice by Paul</a>
+</h1>
 
       <div className="grid grid-cols-2 gap-6">
         {/* Left Column */}
