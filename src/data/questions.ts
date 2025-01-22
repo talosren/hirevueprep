@@ -15,7 +15,7 @@ interface Question {
 
 export const companies: Company[] = [
   {
-    "id": "1",
+    "id": "9",
     "name": "J.P. Morgan",
     "logo_url": "https://example.com/j.p. morgan-logo.png"
   },
@@ -55,7 +55,7 @@ export const companies: Company[] = [
     "logo_url": "https://example.com/decision-related questions-logo.png"
   },
   {
-    "id": "9",
+    "id": "1",
     "name": "ETC",
     "logo_url": "https://example.com/etc-logo.png"
   },
@@ -153,7 +153,7 @@ export const companies: Company[] = [
 
 export const questions: Question[] = [
   {
-    "id": "1",
+    "id": "9",
     "company_id": "0",
     "question_text": "How do you handle working under pressure?",
     "time_limit": 180,
@@ -209,7 +209,7 @@ export const questions: Question[] = [
     "max_retries": 3
   },
   {
-    "id": "9",
+    "id": "",
     "company_id": "2",
     "question_text": "Define deflation discuss some of its causes and explain its impacts",
     "time_limit": 180,
@@ -2129,7 +2129,7 @@ export const questions: Question[] = [
   {
     "id": "283",
     "company_id": "27",
-    "question_text": "Why are you interseted in Hamilton Lane and this oportunity? In your repsonse please provide examples of relevant academic personal or professional experiences that demonstrate your interest in this field",
+    "question_text": "Why are you interested in Hamilton Lane and this opportunity? In your response please provide examples of relevant academic personal or professional experiences that demonstrate your interest in this field",
     "time_limit": 180,
     "max_retries": 3
   },
