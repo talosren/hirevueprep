@@ -25,7 +25,7 @@ export const Timer: React.FC = () => {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="text-4xl font-mono">
+    <div className="text-2xl sm:text-4xl font-mono">
       {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
     </div>
   );
