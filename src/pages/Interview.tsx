@@ -53,7 +53,7 @@ function Interview() {
     if (recordedVideo) {
       const a = document.createElement('a');
       a.href = recordedVideo;
-      a.download = `interview-recording-${Date.now()}.webm`;
+      a.download = `interview-recording-${Date.now()}.mp4`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
