@@ -5,9 +5,6 @@ import { HiDownload } from 'react-icons/hi';
 import { useInterviewStore } from '../store/interview';
 import { Timer } from '../components/Timer';
 import { createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
-import { inject } from '@vercel/analytics';
-// Inject Vercel Analytics to start tracking
-inject();
 
 function Interview() {
   const videoRef = useRef<HTMLVideoElement>(null);
