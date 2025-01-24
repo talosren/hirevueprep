@@ -51,35 +51,38 @@ function Interview() {
   }, [recordedVideo]);
 
   const ffmpeg = createFFmpeg({ log: true });
-  const handleDownload = async () => {
-    if (recordedVideo) {
-      // Load FFmpeg
-      if (!ffmpeg.isLoaded()) {
-        await ffmpeg.load();
-      }
-  
-      // Write the WebM video to FFmpeg's virtual file system
-      ffmpeg.FS('writeFile', 'input.webm', await fetchFile(recordedVideo));
-  
-      // Convert the WebM video to MP4
-      await ffmpeg.run('-i', 'input.webm', 'output.mp4');
-  
-      // Read the MP4 file from FFmpeg's virtual file system
-      const data = ffmpeg.FS('readFile', 'output.mp4');
-  
-      // Create a Blob and download the MP4 file
-      const mp4Blob = new Blob([data.buffer], { type: 'video/mp4' });
-      const mp4URL = URL.createObjectURL(mp4Blob);
-  
-      // Create a download link
-      const a = document.createElement('a');
-      a.href = mp4URL;
-      a.download = `interview-recording-${Date.now()}.mp4`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
-  };
+const handleDownload = async () => {
+  if (recordedVideo) {
+    // Initialize FFmpeg if not already loaded
+    if (!ffmpeg.isLoaded()) await ffmpeg.load();
+
+    // Fetch the input video file as binary data
+    const inputFileName = 'input.webm'; // Or the extension of your recorded video
+    const outputFileName = 'output.mp4';
+    ffmpeg.FS('writeFile', inputFileName, await fetchFile(recordedVideo));
+
+    // Run FFmpeg to convert the video format
+    await ffmpeg.run('-i', inputFileName, outputFileName);
+
+    // Retrieve the processed video as a Uint8Array
+    const data = ffmpeg.FS('readFile', outputFileName);
+
+    // Convert the Uint8Array to a Blob and create a Blob URL
+    const videoBlob = new Blob([data.buffer], { type: 'video/mp4' });
+    const videoUrl = URL.createObjectURL(videoBlob);
+
+    // Trigger download
+    const a = document.createElement('a');
+    a.href = videoUrl;
+    a.download = `interview-recording-${Date.now()}.mp4`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    // Clean up
+    URL.revokeObjectURL(videoUrl);
+  }
+};
 
   const currentQuestion = questions[currentQuestionIndex];
 
