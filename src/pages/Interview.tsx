@@ -4,8 +4,10 @@ import { TbReload } from 'react-icons/tb';
 import { HiDownload } from 'react-icons/hi';
 import { useInterviewStore } from '../store/interview';
 import { Timer } from '../components/Timer';
+import { createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
 
 function Interview() {
+  const ffmpeg = createFFmpeg({ log: true });
   const videoRef = useRef<HTMLVideoElement>(null);
   const {
     companies,
@@ -49,16 +51,35 @@ function Interview() {
     };
   }, [recordedVideo]);
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     if (recordedVideo) {
-      const a = document.createElement('a');
-      a.href = recordedVideo;
-      a.download = `interview-recording-${Date.now()}.mp4`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
-  };
+
+      if (!ffmpeg.isLoaded()) {
+        await ffmpeg.load();
+      }
+
+      // Write the WebM video to FFmpeg's virtual file system
+    ffmpeg.FS('writeFile', 'input.webm', await fetchFile(recordedVideo));
+
+    // Convert the WebM video to MP4
+    await ffmpeg.run('-i', 'input.webm', 'output.mp4');
+
+    // Read the MP4 file from FFmpeg's virtual file system
+    const data = ffmpeg.FS('readFile', 'output.mp4');
+
+    // Create a Blob and download the MP4 file
+    const mp4Blob = new Blob([data.buffer], { type: 'video/mp4' });
+    const mp4URL = URL.createObjectURL(mp4Blob);
+
+    // Create a download link
+    const a = document.createElement('a');
+    a.href = mp4URL;
+    a.download = `interview-recording-${Date.now()}.mp4`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+};
 
   const currentQuestion = questions[currentQuestionIndex];
 
