@@ -51,41 +51,51 @@ function Interview() {
   }, [recordedVideo]);
 
   const ffmpeg = createFFmpeg({ log: true });
-  if (!ffmpeg.isLoaded()) {
-  console.log('Loading FFmpeg...');
-  await ffmpeg.load();
-  console.log('FFmpeg loaded');
-}
-const handleDownload = async () => {
-  if (recordedVideo) {
-    // Initialize FFmpeg if not already loaded
-    if (!ffmpeg.isLoaded()) await ffmpeg.load();
+  const handleDownload = async () => {
+    if (recordedVideo) {
+      // Initialize FFmpeg if not already loaded
+      if (!ffmpeg.isLoaded()) {
+        console.log('Loading FFmpeg...');
+        await ffmpeg.load();
+        console.log('FFmpeg loaded');
+      }
+  
+      // Fetch the input video file as binary data
+      const inputFileName = 'input.webm'; // Or the extension of your recorded video
+      const outputFileName = 'output.mp4';
+      
+  try {
+      // Write the input video to FFmpeg's virtual file system
+      console.log('Writing input file...');
+      ffmpeg.FS('writeFile', inputFileName, await fetchFile(recordedVideo));
 
-    // Fetch the input video file as binary data
-    const inputFileName = 'input.webm'; // Or the extension of your recorded video
-    const outputFileName = 'output.mp4';
-    ffmpeg.FS('writeFile', inputFileName, await fetchFile(recordedVideo));
+      // Convert the video format using FFmpeg
+      console.log('Running FFmpeg...');
+      await ffmpeg.run('-i', inputFileName, outputFileName);
 
-    // Run FFmpeg to convert the video format
-    await ffmpeg.run('-i', inputFileName, outputFileName);
+      // Retrieve the output video from FFmpeg's virtual file system
+      console.log('Reading output file...');
+      const data = ffmpeg.FS('readFile', outputFileName);
 
-    // Retrieve the processed video as a Uint8Array
-    const data = ffmpeg.FS('readFile', outputFileName);
+      // Create a Blob URL from the output video
+      const videoBlob = new Blob([data.buffer], { type: 'video/mp4' });
+      const videoUrl = URL.createObjectURL(videoBlob);
+      console.log('Generated video URL:', videoUrl);
 
-    // Convert the Uint8Array to a Blob and create a Blob URL
-    const videoBlob = new Blob([data.buffer], { type: 'video/mp4' });
-    const videoUrl = URL.createObjectURL(videoBlob);
+      // Trigger file download
+      const a = document.createElement('a');
+      a.href = videoUrl;
+      a.download = `interview-recording-${Date.now()}.mp4`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
 
-    // Trigger download
-    const a = document.createElement('a');
-    a.href = videoUrl;
-    a.download = `interview-recording-${Date.now()}.mp4`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    // Clean up
-    URL.revokeObjectURL(videoUrl);
+      // Clean up Blob URL
+      URL.revokeObjectURL(videoUrl);
+      console.log('Download complete');
+    } catch (error) {
+      console.error('An error occurred during video processing:', error);
+    }
   }
 };
 
