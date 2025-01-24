@@ -5,6 +5,7 @@ import { HiDownload } from 'react-icons/hi';
 import { useInterviewStore } from '../store/interview';
 import { Timer } from '../components/Timer';
 import { createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
+import { Analytics } from "@vercel/analytics/react";
 
 function Interview() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -49,6 +50,8 @@ function Interview() {
       }
     };
   }, [recordedVideo]);
+
+<Analytics />
 
 const handleDownload = () => {
   if (recordedVideo) {
