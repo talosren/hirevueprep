@@ -51,6 +51,11 @@ function Interview() {
   }, [recordedVideo]);
 
   const ffmpeg = createFFmpeg({ log: true });
+  if (!ffmpeg.isLoaded()) {
+  console.log('Loading FFmpeg...');
+  await ffmpeg.load();
+  console.log('FFmpeg loaded');
+}
 const handleDownload = async () => {
   if (recordedVideo) {
     // Initialize FFmpeg if not already loaded
