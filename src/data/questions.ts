@@ -148,11 +148,6 @@ export const companies: Company[] = [
     "id": "27",
     "name": "Hamilton Lane",
     "logo_url": "https://example.com/hamilton lane-logo.png"
-  },
-  {
-    "id": "28",
-    "name": "PNC",
-    "logo_url": "https://example.com/pnc-logo.png"
   }
 ];
 
