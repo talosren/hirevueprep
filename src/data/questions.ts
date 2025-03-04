@@ -2165,40 +2165,5 @@ export const questions: Question[] = [
     "question_text": "​​​​Describe a time when you had to manage a heavy workload with multiple priorities. How did you ensure everything was completed on time? How did you ensure the quality of your work was maintained?",
     "time_limit": 180,
     "max_retries": 3
-  },
-  {
-    "id": "288",
-    "company_id": "28",
-    "question_text": "Hello To get started tell us a little about yourself",
-    "time_limit": 180,
-    "max_retries": 3
-  },
-  {
-    "id": "289",
-    "company_id": "28",
-    "question_text": "At PNC we are a customer focused organization. Our customers both internal and external are at the center of everything we do.  In your opinion what are the components of a great customer experience?",
-    "time_limit": 180,
-    "max_retries": 3
-  },
-  {
-    "id": "290",
-    "company_id": "28",
-    "question_text": "The Asset Management group Internship/Development Program offers two tracks. Which track are you most interested in: Institutional or Private Bank (Wealth Management)?",
-    "time_limit": 180,
-    "max_retries": 3
-  },
-  {
-    "id": "291",
-    "company_id": "28",
-    "question_text": "What financial news source do you find value in? What is a recent story you found interesting?",
-    "time_limit": 180,
-    "max_retries": 3
-  },
-  {
-    "id": "292",
-    "company_id": "28",
-    "question_text": "How do banks make money?",
-    "time_limit": 180,
-    "max_retries": 3
   }
 ];
