@@ -1,7 +1,3 @@
-Interview
-Admin
-Back to Admin
-Code Preview
 // questions.ts
 interface Company {
   id: string;
