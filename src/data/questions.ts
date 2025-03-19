@@ -1,3 +1,7 @@
+Interview
+Admin
+Back to Admin
+Code Preview
 // questions.ts
 interface Company {
   id: string;
@@ -148,6 +152,21 @@ export const companies: Company[] = [
     "id": "27",
     "name": "Hamilton Lane",
     "logo_url": "https://example.com/hamilton lane-logo.png"
+  },
+  {
+    "id": "28",
+    "name": "Madison Energy Infrastructure",
+    "logo_url": "https://example.com/madison energy infrastructure-logo.png"
+  },
+  {
+    "id": "29",
+    "name": "PNC",
+    "logo_url": "https://example.com/pnc-logo.png"
+  },
+  {
+    "id": "30",
+    "name": "TP ICAP",
+    "logo_url": "https://example.com/tp icap-logo.png"
   }
 ];
 
@@ -2158,6 +2177,104 @@ export const questions: Question[] = [
     "id": "287",
     "company_id": "27",
     "question_text": "​​​​Describe a time when you had to manage a heavy workload with multiple priorities. How did you ensure everything was completed on time? How did you ensure the quality of your work was maintained?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "288",
+    "company_id": "28",
+    "question_text": "Tell us about yourself. Give us one relevant experience and a book recommendation.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "289",
+    "company_id": "28",
+    "question_text": "Why are you excited to work in the renewable energy space?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "290",
+    "company_id": "28",
+    "question_text": "Please describe one or more ways in which you think you could add value to the Madison Energy team this summer.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "291",
+    "company_id": "28",
+    "question_text": "What goals do you want to accomplish at the end of the summer?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "292",
+    "company_id": "28",
+    "question_text": "You are to be stranded on a deserted island but all your basic needs are taken care of. What two items would you bring with you?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "293",
+    "company_id": "29",
+    "question_text": "Tell us about yourself",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "294",
+    "company_id": "29",
+    "question_text": "At PNC we are a customer focused organization. Our customers both internal and external are at the center of everything we do.  In your opinion what are the components of a great customer experience?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "295",
+    "company_id": "29",
+    "question_text": "The Asset Management group Internship/Development Program offers two tracks. Which track are you most interested in: Institutional or Private Bank (Wealth Management)?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "296",
+    "company_id": "29",
+    "question_text": "What financial news source do you find value in? What is a recent story you found interesting?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "297",
+    "company_id": "29",
+    "question_text": "How do banks make money?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "298",
+    "company_id": "30",
+    "question_text": "Tell us about yourself what interests you most about a career in global broking and why you think you’re a good fit for this internship.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "299",
+    "company_id": "30",
+    "question_text": "What do you understand about the role of a broker in the global markets",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "300",
+    "company_id": "30",
+    "question_text": "How do you ensure clear communication when dealing with clients or team members?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "301",
+    "company_id": "30",
+    "question_text": "Pick any item around you—big or small—and sell it to us in 60 seconds or less. Convince us why we need it and why it’s worth having.",
     "time_limit": 180,
     "max_retries": 3
   }
