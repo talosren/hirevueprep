@@ -163,6 +163,51 @@ export const companies: Company[] = [
     "id": "30",
     "name": "TP ICAP",
     "logo_url": "https://example.com/tp icap-logo.png"
+  },
+  {
+    "id": "31",
+    "name": "Ardian",
+    "logo_url": "https://example.com/ardian-logo.png"
+  },
+  {
+    "id": "32",
+    "name": "General Atlantic",
+    "logo_url": "https://example.com/general atlantic-logo.png"
+  },
+  {
+    "id": "33",
+    "name": "Apollo",
+    "logo_url": "https://example.com/apollo-logo.png"
+  },
+  {
+    "id": "34",
+    "name": "Bain",
+    "logo_url": "https://example.com/bain-logo.png"
+  },
+  {
+    "id": "35",
+    "name": "Carlyle",
+    "logo_url": "https://example.com/carlyle-logo.png"
+  },
+  {
+    "id": "36",
+    "name": "Silver Lake",
+    "logo_url": "https://example.com/silver lake-logo.png"
+  },
+  {
+    "id": "37",
+    "name": "KKR",
+    "logo_url": "https://example.com/kkr-logo.png"
+  },
+  {
+    "id": "38",
+    "name": "TPG",
+    "logo_url": "https://example.com/tpg-logo.png"
+  },
+  {
+    "id": "39",
+    "name": "Warburg Pincus",
+    "logo_url": "https://example.com/warburg pincus-logo.png"
   }
 ];
 
@@ -2271,6 +2316,398 @@ export const questions: Question[] = [
     "id": "301",
     "company_id": "30",
     "question_text": "Pick any item around you—big or small—and sell it to us in 60 seconds or less. Convince us why we need it and why it’s worth having.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "302",
+    "company_id": "31",
+    "question_text": "Why do you want to work at Ardian?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "303",
+    "company_id": "31",
+    "question_text": "Describe a time you demonstrated strong attention to detail.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "304",
+    "company_id": "31",
+    "question_text": "What motivates you in your professional life?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "305",
+    "company_id": "31",
+    "question_text": "Describe a situation where you had to work with a culturally diverse team.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "306",
+    "company_id": "31",
+    "question_text": "Tell me a time you overcame a difficult financial challenge.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "307",
+    "company_id": "31",
+    "question_text": "Have you ever had to persuade others to adopt your point of view?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "308",
+    "company_id": "31",
+    "question_text": "How do you prioritize your time during high-pressure situations?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "309",
+    "company_id": "31",
+    "question_text": "How would you value a fund-of-funds investment?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "310",
+    "company_id": "31",
+    "question_text": "Walk me through a typical private equity deal process.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "311",
+    "company_id": "31",
+    "question_text": "What factors would you consider when building an LBO model for a mid-cap industrial company?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "312",
+    "company_id": "31",
+    "question_text": "How does Ardian's investment strategy differ from other private equity firms?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "313",
+    "company_id": "32",
+    "question_text": "Why do you want to work at General Atlantic?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "314",
+    "company_id": "32",
+    "question_text": "Tell me about a business trend you're excited about.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "315",
+    "company_id": "32",
+    "question_text": "Describe a time when you had to analyze a company or market quickly",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "316",
+    "company_id": "32",
+    "question_text": "What makes a good growth equity investment?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "317",
+    "company_id": "32",
+    "question_text": "Tell me about a time when you had to think like an investor.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "318",
+    "company_id": "32",
+    "question_text": "Describe a situation where you had to work cross-functionally.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "319",
+    "company_id": "32",
+    "question_text": "What's a company you admire and why?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "320",
+    "company_id": "32",
+    "question_text": "What valuation methods are most relevant for growth equity?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "321",
+    "company_id": "32",
+    "question_text": "What's the difference between venture capital and growth equity?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "322",
+    "company_id": "33",
+    "question_text": "Describe a time where you had to work in a team to solve a challenging problem.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "323",
+    "company_id": "33",
+    "question_text": "Can you describe a time when you had to demonstrate leadership?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "324",
+    "company_id": "33",
+    "question_text": "Why apollo and why this internship",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "325",
+    "company_id": "33",
+    "question_text": "Walk me through a DCF",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "326",
+    "company_id": "33",
+    "question_text": "How would you value a company that has negative earnings or is in its early growth stage?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "327",
+    "company_id": "33",
+    "question_text": "How would you analyze a company's capital structure?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "328",
+    "company_id": "33",
+    "question_text": "What is the difference between enterprise value and equity value?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "329",
+    "company_id": "34",
+    "question_text": "Walk me through a DCF",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "330",
+    "company_id": "34",
+    "question_text": "A company in the tech sector is growing rapidly but facing significant competition. You’re tasked with assessing whether it’s a good investment for Bain Capital. What factors would you consider?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "331",
+    "company_id": "34",
+    "question_text": "How would you value a company with negative earnings?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "332",
+    "company_id": "34",
+    "question_text": "You are looking at a mature manufacturing company in a low-growth industry. The company has stable cash flows but limited growth potential. How would you assess whether to invest?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "333",
+    "company_id": "35",
+    "question_text": "Why are you interested in working at Carlyle and what excites you about the Summer Associate Program?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "334",
+    "company_id": "35",
+    "question_text": "Tell us about a time when you demonstrated leadership in a challenging situation.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "335",
+    "company_id": "35",
+    "question_text": "Describe a time when you had to analyze a complex situation or solve a difficult problem. What steps did you take to solve it?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "336",
+    "company_id": "35",
+    "question_text": "Imagine you are assessing an investment opportunity in a growing software company. The company is profitable but has higher customer concentration risk with 60% of its revenue coming from one customer. What would be your approach to evaluating this risk and the company's long-term potential?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "337",
+    "company_id": "35",
+    "question_text": "Carlyle places significant value on diversity and inclusion. Can you describe a time when you worked with a team from diverse backgrounds and what you learned from that experience?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "338",
+    "company_id": "36",
+    "question_text": "You're working on a deal with a tight timeline and one of your colleagues misses a key deadline that delays part of the process. The delay could affect your team's ability to finalize the deal on time. How do you handle the situation?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "339",
+    "company_id": "36",
+    "question_text": "A portfolio company's management team has asked for additional funding to scale their business faster than originally planned but your financial model suggests the plan carries significant risk. How do you approach this situation?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "340",
+    "company_id": "36",
+    "question_text": "You are given responsibility for leading a group presentation for an internal meeting but you quickly realize that one of your team members is unprepared and lacks the necessary data to contribute. How do you handle the situation?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "341",
+    "company_id": "36",
+    "question_text": "During a client meeting the client expresses dissatisfaction with the direction the company is taking in terms of strategy. The are looking to you for advice on how to move forward. How do you respond?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "342",
+    "company_id": "36",
+    "question_text": "Your team is discussing an investment opportunity and you notice that one of your colleagues is overly optimistic about the potential return on investment. While they make a compelling argument you have reservations about the assumptions they're making. How do you approach this?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "343",
+    "company_id": "37",
+    "question_text": "Why do you want to join KKR and what attracts you to the Future Leaders Internship?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "344",
+    "company_id": "37",
+    "question_text": "Describe a time you took initiative or demonstrated leadership in a team setting.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "345",
+    "company_id": "37",
+    "question_text": "Tell us about a time you had to work with a diverse team. What did you learn from the experience?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "346",
+    "company_id": "37",
+    "question_text": "What qualities do you think are important to succeed in an investment role at KKR? How have you demonstrated them?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "347",
+    "company_id": "37",
+    "question_text": "Tell us about an industry or company you think is well-positioned for long-term growth.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "348",
+    "company_id": "38",
+    "question_text": "Why are you interested in working at TPG specifically in the Growth Equity Division?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "349",
+    "company_id": "38",
+    "question_text": "Describe a time when you worked as part of a team to solve a challenging problem. What was your role?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "350",
+    "company_id": "38",
+    "question_text": "Tell us about a time you had to analyze data to make a recommendation.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "351",
+    "company_id": "38",
+    "question_text": "What do you think makes a successful growth equity investor? How do you embody these traits?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "352",
+    "company_id": "38",
+    "question_text": "What’s a company or sector you find particularly exciting and why?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "353",
+    "company_id": "39",
+    "question_text": "Why are you interested in working at Warburg Pincus?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "354",
+    "company_id": "39",
+    "question_text": "Tell us about a time you worked in a team to achieve a goal. What was your role and how did you contribute?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "355",
+    "company_id": "39",
+    "question_text": "Describe a time when you had to analyze complex data or information. What approach did you take and what was the result?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "356",
+    "company_id": "39",
+    "question_text": "What qualities do you believe are important for someone working in private equity and how do you embody them?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "357",
+    "company_id": "39",
+    "question_text": "What is a company or industry you find interesting right now and why?",
     "time_limit": 180,
     "max_retries": 3
   }
