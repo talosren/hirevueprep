@@ -208,6 +208,16 @@ export const companies: Company[] = [
     "id": "39",
     "name": "Warburg Pincus",
     "logo_url": "https://example.com/warburg pincus-logo.png"
+  },
+  {
+    "id": "40",
+    "name": "Nomura",
+    "logo_url": "https://example.com/nomura-logo.png"
+  },
+  {
+    "id": "41",
+    "name": "Deutsche Bank",
+    "logo_url": "https://example.com/deutsche bank-logo.png"
   }
 ];
 
@@ -2708,6 +2718,293 @@ export const questions: Question[] = [
     "id": "357",
     "company_id": "39",
     "question_text": "What is a company or industry you find interesting right now and why?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "358",
+    "company_id": "40",
+    "question_text": "Tell us about yourself and why you are interested in Finance.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "359",
+    "company_id": "40",
+    "question_text": "Why did you choose to apply to Nomura?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "360",
+    "company_id": "40",
+    "question_text": "Describe a time when you had to manage a project under tight deadlines. How did you handle it?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "361",
+    "company_id": "40",
+    "question_text": "How do you approach making decisions when faced with uncertainty or incomplete data?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "362",
+    "company_id": "40",
+    "question_text": "Share an example of a situation where you worked in a team to achieve a common goal. What was your role?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "363",
+    "company_id": "40",
+    "question_text": "How do you approach learning new concepts or tools in a fast-paced environment?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "364",
+    "company_id": "40",
+    "question_text": "Can you describe a time when you had to resolve a conflict within a team? How did you approach it?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "365",
+    "company_id": "40",
+    "question_text": "How do you handle criticism especially when it's related to your work performance?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "366",
+    "company_id": "40",
+    "question_text": "Tell us about a situation where you demonstrated creativity to solve a problem.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "367",
+    "company_id": "40",
+    "question_text": "What do you think is the most important quality for success in the finance industry and why?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "368",
+    "company_id": "41",
+    "question_text": "Tell me about your background and experiences.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "369",
+    "company_id": "41",
+    "question_text": "Why do you want to work at Deutsche Bank?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "370",
+    "company_id": "41",
+    "question_text": "Can you describe a challenging situation you faced and how you handled it?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "371",
+    "company_id": "41",
+    "question_text": "How do you approach managing competing deadlines or multiple projects?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "372",
+    "company_id": "41",
+    "question_text": "Share an example of when you took initiative or led a project.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "373",
+    "company_id": "41",
+    "question_text": "Hwo do you respond to constructive criticism?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "374",
+    "company_id": "41",
+    "question_text": "Tell me about a time when you had to collaborate with someone who was difficult to work with.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "375",
+    "company_id": "41",
+    "question_text": "What drives you to perform at your best in a professional environment?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "376",
+    "company_id": "41",
+    "question_text": "How do you ensure the quality and accuracy of your work?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "377",
+    "company_id": "41",
+    "question_text": "Tell me about a specific goal you set and how you achieved it.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "378",
+    "company_id": "14",
+    "question_text": "Tell me about yourself.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "379",
+    "company_id": "14",
+    "question_text": "Why do you want to work for Blackrock",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "380",
+    "company_id": "14",
+    "question_text": "Describe at time when you overcame a challenge.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "381",
+    "company_id": "14",
+    "question_text": "How do you prioritize tasks?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "382",
+    "company_id": "14",
+    "question_text": "Give an example of when you demonstrated leadership.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "383",
+    "company_id": "14",
+    "question_text": "How do you handle feedback?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "384",
+    "company_id": "14",
+    "question_text": "Describe a time you worked with a difficult team member.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "385",
+    "company_id": "14",
+    "question_text": "What motivates you in a professional setting?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "386",
+    "company_id": "14",
+    "question_text": "How do you ensure accuracy in your work?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "387",
+    "company_id": "14",
+    "question_text": "Give an example of a goal you set and achieved.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "388",
+    "company_id": "24",
+    "question_text": "Tell us about yourself.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "389",
+    "company_id": "24",
+    "question_text": "Why do you want to work for Barclays?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "390",
+    "company_id": "24",
+    "question_text": "Can you describe a time when you demonstrated leadership?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "391",
+    "company_id": "24",
+    "question_text": "Tell us about a time when you had to handle a difficult situation.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "392",
+    "company_id": "24",
+    "question_text": "How do you prioritize your work when you have multiple deadlines?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "393",
+    "company_id": "24",
+    "question_text": "How do you handle working with a team where there are differing opinions?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "394",
+    "company_id": "24",
+    "question_text": "Where do you see yourself in five years?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "395",
+    "company_id": "24",
+    "question_text": "Describe a time you worked in a high-pressure situation. How did you manage?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "396",
+    "company_id": "24",
+    "question_text": "How do you stay up to date with industry trends?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "397",
+    "company_id": "24",
+    "question_text": "How do you handle feedback",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "398",
+    "company_id": "24",
+    "question_text": "especially when it's critical?",
     "time_limit": 180,
     "max_retries": 3
   }
