@@ -218,6 +218,11 @@ export const companies: Company[] = [
     "id": "41",
     "name": "Deutsche Bank",
     "logo_url": "https://example.com/deutsche bank-logo.png"
+  },
+  {
+    "id": "42",
+    "name": "Bernstein",
+    "logo_url": "https://example.com/bernstein-logo.png"
   }
 ];
 
@@ -3005,6 +3010,48 @@ export const questions: Question[] = [
     "id": "398",
     "company_id": "24",
     "question_text": "especially when it's critical?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "399",
+    "company_id": "42",
+    "question_text": "Why Bernstein?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "400",
+    "company_id": "42",
+    "question_text": "How do you keep up with the markets?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "401",
+    "company_id": "42",
+    "question_text": "What is important to you in terms of next steps in your career?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "402",
+    "company_id": "42",
+    "question_text": "What do you do for fun?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "403",
+    "company_id": "42",
+    "question_text": "What was your favorite class and why?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "404",
+    "company_id": "42",
+    "question_text": "What's a stock you've been following and why?",
     "time_limit": 180,
     "max_retries": 3
   }
