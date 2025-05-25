@@ -3054,5 +3054,26 @@ export const questions: Question[] = [
     "question_text": "What's a stock you've been following and why?",
     "time_limit": 180,
     "max_retries": 3
+  },
+  {
+    "id": "405",
+    "company_id": "37",
+    "question_text": "Tell us about a recent market deal that caught your attention particularly in the real estate space. Why did it stand out to you?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "406",
+    "company_id": "37",
+    "question_text": "Why are you interested in K-Star?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "407",
+    "company_id": "37",
+    "question_text": "Describe a time when you received constructive feedback. How did you respond and what did you learn from the experience?",
+    "time_limit": 180,
+    "max_retries": 3
   }
 ];
