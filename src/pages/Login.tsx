@@ -31,7 +31,7 @@ function Login() {
   };
 
   const handleJoinUs = () => {
-    window.open('https://example.com/signup', '_blank');
+    window.open('https://uwcorporatebanking.wixsite.com/uwcbc/application', '_blank');
   };
 
   return (
