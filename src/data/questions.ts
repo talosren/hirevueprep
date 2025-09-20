@@ -223,6 +223,16 @@ export const companies: Company[] = [
     "id": "42",
     "name": "Bernstein",
     "logo_url": "https://example.com/bernstein-logo.png"
+  },
+  {
+    "id": "43",
+    "name": "DLP Capital",
+    "logo_url": "https://example.com/dlp capital-logo.png"
+  },
+  {
+    "id": "44",
+    "name": "U.S. Bank",
+    "logo_url": "https://example.com/u.s. bank-logo.png"
   }
 ];
 
@@ -3073,6 +3083,55 @@ export const questions: Question[] = [
     "id": "407",
     "company_id": "37",
     "question_text": "Describe a time when you received constructive feedback. How did you respond and what did you learn from the experience?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "408",
+    "company_id": "43",
+    "question_text": "What stood out to you about our program",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "409",
+    "company_id": "43",
+    "question_text": "Tell us a time you had to learn something difficult",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "410",
+    "company_id": "43",
+    "question_text": "How do you learn?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "411",
+    "company_id": "44",
+    "question_text": "Tell us about your favorite excel project and what functions you used?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "412",
+    "company_id": "44",
+    "question_text": "Tell us about a time that you worked in a group that wasn't inclusive",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "413",
+    "company_id": "43",
+    "question_text": "What's a great idea you had recently",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "414",
+    "company_id": "44",
+    "question_text": "Why U.S. Bank?",
     "time_limit": 180,
     "max_retries": 3
   }
