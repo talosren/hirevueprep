@@ -233,6 +233,11 @@ export const companies: Company[] = [
     "id": "44",
     "name": "U.S. Bank",
     "logo_url": "https://example.com/u.s. bank-logo.png"
+  },
+  {
+    "id": "45",
+    "name": "Shell",
+    "logo_url": "https://example.com/shell-logo.png"
   }
 ];
 
@@ -3132,6 +3137,69 @@ export const questions: Question[] = [
     "id": "414",
     "company_id": "44",
     "question_text": "Why U.S. Bank?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "415",
+    "company_id": "45",
+    "question_text": "Describe a time when you needed to ask for feedback or advice.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "416",
+    "company_id": "45",
+    "question_text": "Tell me about a time whe you had to work with a person who had a different opinion than you?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "417",
+    "company_id": "45",
+    "question_text": "Why are you interested in Shell?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "418",
+    "company_id": "11",
+    "question_text": "Tell us why you are interested in this opportunity. Describe how your skills and experiences may set you apart from other candidates",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "419",
+    "company_id": "11",
+    "question_text": "Tell me ten ways to use a pencil other than writing.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "420",
+    "company_id": "11",
+    "question_text": "Tell us about an industry or company that you think would represent an attractive investment opportunity if the investment time horizon is twenty year. What characteristics would you get comfortable over such a longer period of time?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "421",
+    "company_id": "20",
+    "question_text": "Give an example of a time when you had to gather information to solve a problem?",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "422",
+    "company_id": "20",
+    "question_text": "Tell me about a time when you prioritized tasks and assignments for a project.",
+    "time_limit": 180,
+    "max_retries": 3
+  },
+  {
+    "id": "423",
+    "company_id": "20",
+    "question_text": "We all make mistakes even in our field of expertise. Give me an example of a recent mistake you made in your area of expertise/ What did you do and how did you learn from this?",
     "time_limit": 180,
     "max_retries": 3
   }
